@@ -113,5 +113,6 @@ POST   /logout
 * https://golang.org/doc/
 * https://pt.stackoverflow.com/
 * https://dev.to/(Steven Victor)
+* https://dev.to/stevensunflash/a-working-solution-to-jwt-creation-and-invalidation-in-golang-4oe4
 * https://docs.docker.com/
 * https://www.fiap.com.br/
