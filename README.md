@@ -1,5 +1,12 @@
 # API Construida em camadas`
 
+
+# Realizando build via Docker
+o comando abaixo alem de ja subir um conteiner de todas as dependencias da aplicação(Redis, Postgres) tambem realiza o build da imagem atravez da chamada ao Dockerfile
+
+	#docker-compose build
+    #docker-compose up -d
+
 # Sugestão de comida
 
 Essa api foi construida usando as melhores praticas de desenvolvimento e usando o conceito de camadas
