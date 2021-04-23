@@ -1,5 +1,12 @@
 # API Construida em camadas`
 
+# Realizando build usando o cli do go
+o comando abaixo alem de ja subir um conteiner de todas as dependencias da aplicação(Redis, Postgres) tambem realiza o build da imagem atravez da chamada ao Dockerfile
+
+    #go get
+	#go build -o apifood
+    #./apifood
+
 
 # Realizando build via Docker
 o comando abaixo alem de ja subir um conteiner de todas as dependencias da aplicação(Redis, Postgres) tambem realiza o build da imagem atravez da chamada ao Dockerfile
