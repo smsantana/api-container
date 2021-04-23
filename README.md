@@ -51,38 +51,39 @@ DELETE /comida/:com_id
     ...
 
 GET    /comida
-[
-    {
-        "id": 9,
-        "user_id": 1,
-        "title": "comida6",
-        "description": "desc comida6",
-        "food_image": "",
-        "created_at": "2021-04-23T06:05:57.270487Z",
-        "updated_at": "2021-04-23T06:05:57.270487Z",
-        "deleted_at": null
-    },
-    {
-        "id": 2,
-        "user_id": 1,
-        "title": "comida2",
-        "description": "desc comida2",
-        "food_image": "",
-        "created_at": "2021-04-23T04:28:45.225982Z",
-        "updated_at": "2021-04-23T04:28:45.225982Z",
-        "deleted_at": null
-    },
-    {
-        "id": 1,
-        "user_id": 1,
-        "title": "comida1",
-        "description": "desc comida1",
-        "food_image": "",
-        "created_at": "2021-04-23T04:27:43.545339Z",
-        "updated_at": "2021-04-23T04:27:43.545339Z",
-        "deleted_at": null
-    }
-]
+
+    [
+        {
+            "id": 9,
+            "user_id": 1,
+            "title": "comida6",
+            "description": "desc comida6",
+            "food_image": "",
+            "created_at": "2021-04-23T06:05:57.270487Z",
+            "updated_at": "2021-04-23T06:05:57.270487Z",
+            "deleted_at": null
+        },
+        {
+            "id": 2,
+            "user_id": 1,
+            "title": "comida2",
+            "description": "desc comida2",
+            "food_image": "",
+            "created_at": "2021-04-23T04:28:45.225982Z",
+            "updated_at": "2021-04-23T04:28:45.225982Z",
+            "deleted_at": null
+        },
+        {
+            "id": 1,
+            "user_id": 1,
+            "title": "comida1",
+            "description": "desc comida1",
+            "food_image": "",
+            "created_at": "2021-04-23T04:27:43.545339Z",
+            "updated_at": "2021-04-23T04:27:43.545339Z",
+            "deleted_at": null
+        }
+    ]
     ...
 
 POST   /login
@@ -92,4 +93,3 @@ POST   /login
 POST   /logout
 
     ...
-
