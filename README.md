@@ -1,4 +1,4 @@
-# API Construida em camadas`
+# API Construida em camadas |  Dockerizada
 
 # Realizando build usando o cli do go
 o comando abaixo alem de ja subir um conteiner de todas as dependencias da aplicação(Redis, Postgres) tambem realiza o build da imagem atravez da chamada ao Dockerfile
