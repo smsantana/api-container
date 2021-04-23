@@ -41,6 +41,7 @@ func main() {
 	r := gin.Default()
 	r.Use(middleware.CORSMiddleware())
 
+	//Definindo as rotas que serao expostas via rest API
 	r.POST("/usuarios", users.SaveUser)
 	r.GET("/usuarios", users.GetUsers)
 	r.GET("/usuarios/:usuar_id", users.GetUser)
@@ -56,6 +57,8 @@ func main() {
 	r.POST("/refresh", authenticate.Refresh)
 
 	app_port := os.Getenv("PORT")
+	
+	//Publicando a api
 	if app_port == "" {
 		app_port = "8888"
 	}
