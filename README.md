@@ -100,3 +100,11 @@ POST   /login
 POST   /logout
 
     ...
+
+# Referencias
+
+* https://golang.org/doc/
+* https://pt.stackoverflow.com/
+* https://dev.to/(Steven Victor)
+* https://docs.docker.com/
+* https://www.fiap.com.br/
