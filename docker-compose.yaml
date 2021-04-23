@@ -1,0 +1,58 @@
+version: '2'
+
+services:
+
+  postgres:
+        image: postgres:latest
+        volumes:
+          - esdata1:/var/lib/postgresql/data
+        ports:
+          - "5432:5432"
+        environment:
+            POSTGRES_PASSWORD: "root"
+        restart: always
+        networks:
+          - ifoodcontainer
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+  redis:
+    image:  redis:latest
+    volumes:
+      - esdata1:/data
+    ports:
+      - "6379:6379"
+    restart: always
+    networks:
+      - ifoodcontainer
+    depends_on:
+      - postgres
+
+  apicontainer:
+    build:
+      context: ./
+      args:
+        GO_VERSION: $GO_VERSION
+    volumes:
+      - esdata1:/usr/share/app/data
+    restart: always
+    ports:
+      - "8888:8888"
+    environment:
+      ES_JAVA_OPTS: "-Xmx512m -Xms512m"
+    networks:
+      - ifoodcontainer
+    depends_on:
+        - postgres
+
+volumes:
+  esdata1:
+    driver: local
+
+networks:
+  ifoodcontainer:
+    driver: bridge
